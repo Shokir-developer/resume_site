@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shaxsiy Galereya
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Radley" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="{% static 'css/style.css' %}" rel="stylesheet">
+</head>
+</html>
+<body>
+
+<header>
+  <div class="container">
+    <div class="header-row">
+      <div class="logo">
+        <a href="">
+          <span class="logo-name">Begbotov Shokir</span>
+          <span class="logo-description">
+            <span>learner</span>
+          </span>
+        </a>
+      </div>
+      <ul id="menu">
+        <li>
+          <a href="{% url 'blog' %}">Blog</a>
+        </li>
+        <li class="current">
+          <a href="{% url 'home' %}">Portfolio</a>
+        </li>
+        <li>
+          <a href="{% url 'about' %}">About</a>
+        </li>
+        <li>
+          <a href="{% url 'advice' %}">Home</a>
+        </li>
+      </ul>
+      <div class="burger">
+        <span></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<div class="main">
+  <div class="container">
+    <div class="row">
+      <div class="grid">
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/bir.jpg' %}" alt=""/>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/ikki.jpg' %}" alt=""/>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/uch.jpg' %}" alt=""/>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/tort.jpg' %}" alt=""/>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/besh.jpg' %}" alt=""/>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/olti.jpg' %}" alt=""/>
+          </a>
+        </div>
+        
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/bir.jpg' %}" alt=""/>
+          </a>
+        </div>
+        <div class="grid-item">
+          <a class="grid-link" href="">
+            <img class="grid-img" src="{% static 'images/ikki.jpg' %}" alt=""/>
+          </a>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-row">
+      <div class="footer-col">
+        <p>Copyright © 2021 Shokir</p>
+      </div>
+      <div class="footer-col">
+        <div class="social-icons-wrapper">
+          <a class="social-icon" target="_blank" href="https://www.facebook.com/100026304752239/posts/101188484101310/?app=fbl"><i class="fa fa-facebook"></i></a>
+          <a class="social-icon" target="_blank" href="https://t.me/begbotov_shokir"><i class="fa fa-telegram"></i></a>
+          <a class="social-icon" target="_blank" href="https://www.instagram.com/shokirjon_begbotov"><i class="fa fa-instagram"></i></a>
+          <a class="social-icon" target="_blank" href="https://www.twitter.com/Shake"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.min.js' %}"></script>
+  <script src="{% static 'js/masonry.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>

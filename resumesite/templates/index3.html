@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shaxsiy Galereya
+	</title>
+	
+	<link href="{% static 'css/style.css' %}" rel="stylesheet">
+	<link href="{% static 'css/style3.css' %}" rel="stylesheet">
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+</head>
+</html>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="header-row">
+				<div class="logo">
+					<a href="">
+						<span class="logo-name">Begbotov Shokir</span>
+						<span class="logo-description">
+							<span>learner</span>
+						</span>
+					</a>
+				</div>
+				<ul id="menu">
+					<li class="current">
+						<a href="{% url 'blog' %}">Blog</a>
+					</li>
+					<li  >
+						<a href="{% url 'home' %}">Portfolio</a>
+					</li>
+					<li>
+						<a href="{% url 'about' %}">About</a>
+					</li>
+					<li>
+         				 <a href="{% url 'advice' %}">Home</a>
+        			</li>
+				</ul>
+				<div class="burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+<section>
+
+<div class="container">
+	<div class="title d-flex justify-content-center" >
+			<h4 class="display-3">Advices to learn Python and Django</h4>
+	</div>
+	
+ <table class="table" style="color: white;">
+	  <thead>
+	    <tr>
+	      <th scope="col">NO</th>
+	      <th scope="col">NAME</th>
+	      <th scope="col">LINK</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+	      <th scope="row">1</th>
+	      <td>Programiz</td>
+	      <td><a href="https://www.programiz.com/python-programming">www.programiz.com/python-programming</a></td>
+	    </tr>
+	    <tr>
+	      <th scope="row">2</th>
+	      <td>PyNative</td>
+	      <td><a href="https://pynative.com/">www.pynative.com</a></td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row">3</th>
+	      <td>Study Tonight</td>
+	      <td><a href="https://www.studytonight.com/python/">www.studytonight.com/python</a></td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row">4</th>
+	      <td>Sariq Dev</td>
+	      <td><a href="https://python.sariq.dev/">www.python.sariq.dev/</a></td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row">5</th>
+	      <td>Copyassignment</td>
+	      <td><a href="https://copyassignment.com/python/file-handling-in-python/">www.copyassignment.com</a></td>
+	    </tr>
+
+	     <tr>
+	      <th scope="row">6</th>
+	      <td>Django Project</td>
+	      <td><a href="https://www.djangoproject.com/">	www.djangoproject.com</a></td>
+	    </tr>
+
+	     <tr>
+	      <th scope="row">7</th>
+	      <td>Tutorialspoint</td>
+	      <td><a href="https://www.tutorialspoint.com/django/index.htm">www.tutorialspoint.com</a></td>
+	    </tr>
+
+	    <tr>
+	      <th scope="row">8</th>
+	      <td>Tutorialspoint</td>
+	      <td><a href="https://www.my-courses.net/search/label/Python-Exercises">www.my-courses.net</a></td>
+	    </tr>
+	   
+	  </tbody>
+</table>
+			
+</div>
+</section>
+
+	
+	<footer>
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-col">
+					<p>Copyright © 2021 Shokir</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.min.js' %}"></script>
+  <script src="{% static 'js/masonry.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+
+</body>

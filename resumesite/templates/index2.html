@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shaxsiy Galereya
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,600,700|Radley" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+  <link href="{% static 'css/style2.css' %}" rel="stylesheet">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+</head>
+</html>
+<body>
+
+<header>
+		<div class="container">
+			<div class="header-row">
+				<div class="logo">
+					<a href="">
+						<span class="logo-name">Begbotov Shokir</span>
+						<span class="logo-description">
+							<span>learner</span>
+						</span>
+					</a>
+				</div>
+				<ul id="menu">
+					<li>
+						<a href="{% url 'blog' %}">Blog</a>
+					</li>
+					<li >
+						<a href="{% url 'home' %}">Portfolio</a>
+					</li>
+					<li class="current">
+						<a href="{% url 'about' %}">About</a>
+					</li>
+					<li>
+         				 <a href="{% url 'advice' %}">Home</a>
+        			</li>
+				</ul>
+				<div class="burger">
+					<span></span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+      <section> <div class="container"> <div class="row"> <div class="col-6 ">
+<div class="rasmFon my-5 justify-content-center"> <img class="img-fluid"
+src="{% static 'images/komp.jpg' %}" alt=""> </div> </div> <div class="col-6">
+<div class="container"> <div class="card bg-white my-5"> <h1 class="card-title
+text-center">About me</h1> <div class="card-body"> <p class="card-text">Men
+Begbotov Shokir Fayzulla o'g'li 1998-yil Sirdaryo viloyati Sayxunobod
+tumanining Baxmal  mahallasida tug'ilganman. Maktab davrlarim aynan shu
+mahallada o'tgan. Maktbani bitirgach, Guliston shahridagi 1-sonlo akademik
+listeyda o'qiganman. Hozirda esa Muhammad al Xorazmiy nomidagi Toshkent
+Axborot Texnologiyalari  Unversiteti talabasiman.  Kompyuter injiniringi
+fakultetida hozirda tahsil olayapman. Men Kompyuter savodxonligi va web
+dasturlash sohalariga qiziqaman.  Har kuni dasturlash sohasining
+yangiliklaridan xabardor  bo'lishga harakat qilaman. Kelajakda web sohasi
+bo'yicha malakali dasturchi bo'lmoqchiman. </p> </div> </div> </div> </div>
+</div> </div> </section>
+	
+	<footer>
+		<div class="container">
+			<div class="footer-row">
+				<div class="footer-col">
+					<p>Copyright © 2021 Shokir</p>
+				</div>
+				<div class="footer-col">
+					<div class="social-icons-wrapper">
+						<a class="social-icon" target="_blank" href="https://www.facebook.com/100026304752239/posts/101188484101310/?app=fbl"><i class="fa fa-facebook"></i></a>
+				         <a class="social-icon" target="_blank" href="https://t.me/begbotov_shokir"><i class="fa fa-telegram"></i></a>
+				         <a class="social-icon" target="_blank" href="https://www.instagram.com/shokirjon_begbotov"><i class="fa fa-instagram"></i></a>
+				         <a class="social-icon" target="_blank" href="https://www.twitter.com/Shake"><i class="fa fa-twitter"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+ <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script src="{% static 'js/imagesloaded.min.js' %}"></script>
+  <script src="{% static 'js/masonry.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
